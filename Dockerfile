@@ -13,6 +13,9 @@ COPY . .
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
+# Always use latest yt-dlp — YouTube frequently breaks older versions
+RUN pip install --upgrade yt-dlp
+
 EXPOSE 7860
 
 CMD ["python", "-m", "api.server"]
