@@ -1,0 +1,7 @@
+__pycache__/
+.git/
+.env
+vector_db/
+downloades/
+utils/downloades/
+*.pyc
